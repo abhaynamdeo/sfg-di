@@ -13,6 +13,11 @@ public class SfgDi1Application {
 		MyController myController = (MyController) ctx.getBean("myController");
 		I18NController i18NController = (I18NController) ctx.getBean("i18NController");
 
+		JokesController jokesController = (JokesController) ctx.getBean("jokesController");
+
+		System.out.println("----------- JOKE");
+		System.out.println(jokesController.getJoke());
+
 		System.out.println("----------- PROFILE");
 		System.out.println(i18NController.sayHello());
 
